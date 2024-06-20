@@ -1,4 +1,4 @@
-package Day_2;
+package com.tnsif.Day2;
 
 public class prg1 {
 
@@ -11,8 +11,8 @@ public class prg1 {
 	}
 	public static void main(String[] args) {
 		
-		prg1 obj=new Day_2.prg1();
-		prg1 obj1=new Day_2.prg1();
+		prg1 obj=new com.tnsif.Day2.prg1();
+		prg1 obj1=new com.tnsif.Day2.prg1();
 		prg1 obj2=obj;
 		obj.setN("XYZ");
 		System.out.println(obj.n);

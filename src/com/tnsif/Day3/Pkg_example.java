@@ -1,5 +1,5 @@
-package Day_3;
-import Day_2.*;
+package com.tnsif.Day3;
+import com.tnsif.Day2.*;
 public class Pkg_example {
 
 	public static void main(String[] args) {

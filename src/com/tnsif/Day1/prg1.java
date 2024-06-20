@@ -1,4 +1,4 @@
-package Day_1; //package name
+package com.tnsif.Day1; //package name
 
 public class prg1 { //class name
 	
