@@ -1,4 +1,4 @@
-package com.Abhijit.assignment;
+package com.Abhijit.assignment1;
 
 class Employee 
 {
