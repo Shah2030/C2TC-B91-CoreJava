@@ -1,32 +1,5 @@
 package com.tnsif.Day9;
-/*
- * it only has constant and methods
- * improver the level of abstraction
- * are limited to static and final var{constant}
- * abstract need not apper while defining interface
- * special kind of class
- * no need o use abstract key word
- * class extends class         
- * interface extends interface
- * class implements interface
- * i.e., same same but different -extends
- * need
- * total abstraction
- * multiple inheritance
- * loose coupling
- * Types of interface
- * -functional: ~single abstract interface{only abstract method and any no. concret method or variables}(ActionListeners)
- * -Marker interface: ~empty interface with nothing (serilizable and clonable interface) 
- * */
-interface greetinterface
-{
-	//function interface
-	//void m1(); // these are -- public abstract void m1();
-	//void m2(int i,String s);
-	//int x=10; //default -- static final int x=10;
-	public String greet();
-}
-
+//but defining methods in main method is not possible.,
 interface Regestrable
 {
 	//Marker or empty interface
@@ -82,14 +55,14 @@ class student implements Regestrable
 }
 
 
-class greetclass implements greetinterface 
+/*class greetclass implements greetinterface 
 {
 	@Override
 	public String greet()
 	{
 		return "Hello Shah";
 	}
-}
+}*/
 
 
 
@@ -99,8 +72,8 @@ public class finterfacedemo
 	public static void main(String[] args) 
 	{
 
-		greetclass g=new greetclass();
-		System.out.println(g.greet());
+		//greetclass g=new greetclass();
+		//System.out.println(g.greet());
 		
 		student s=new student(105,"Abc",120000,"C++");
 		System.out.println(s);
