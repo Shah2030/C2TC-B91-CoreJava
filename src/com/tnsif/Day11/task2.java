@@ -1,21 +1,34 @@
 package com.tnsif.Day11;
+
+import java.util.Arrays;
+
 //Write  a program to find the  second largest  number in the array
 public class task2 {
 
-	public static void main(String[] args) 
+	public static int soln(int a[])
 	{
-		int res=0;
-		int a[]= {10,20,30,50,100,50,60,10,5};
+		int temp1=0,temp2=0;
 		for(int i=0;i<a.length;i++)
 		{
-			int temp1=a[0];
-			int temp2=0;
-			if(a[i]>temp1)
-				if(temp2<temp1)
-					res=a[i];
-				
+			for(int j=i;j<a.length;j++)
+			{
+				if(temp1<a[j])
+				{
+					temp1=a[j];
+				}
+				else if(temp2<a[j] && temp1!=a[j])
+				{
+					temp2=a[j];
+				}
+			}
 		}
-		System.out.println(res);
+		return temp2;
+	}
+	public static void main(String[] args) 
+	{
+		
+		int a[]= {10,20,300,50,100,5000,600,10,5,800,200,5000};
+		System.out.println("Second Largest number is: "+soln(a));
 	}
 
 }
