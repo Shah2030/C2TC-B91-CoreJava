@@ -4,13 +4,21 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
+ * It is used in testing
+ * 
  * Exception: Disturbing the normal flow of execution
  * To handle Exceptions we have 5 key words:
  *  Try: Critical Statement,It might throw exception,Exception Generated block try{#code}
  * 	Catch: Catches and handles exception,Exception Handler block, catch(Exception e){#code}
  *  Finally: Used to close the connection, Optional,Freeing the resources, Cleaning code, Closing connection, Terminating Thread,  finally{#code}
- *  Throw:
- *  Throws:
+ *  Throw: Used to throw built-in or customized exception(user defined Exception), used in try block, Syntax: {throw Exception_Name;}
+ *  		it can be used inside a method, unchecked exception, followed by instance VAR.
+ *  Throws: It is a method declaration, caller method takes responsibility of handling the exception, checked exception, followed by class 
+ *  		Syntax:
+ *  			access_specifier return_type method_name(Parameter list) throws exception
+ *  			{
+ *  				//body of the method
+ *  			}	
  * 
  * Types of exceptions:
  * Checked  - Compile time
@@ -24,6 +32,21 @@ import java.util.Scanner;
  * Nested Try catch block -{}
  * Try is always followed by catch statement
  * only 1 Try block
+ * 
+ * User-defind exception:
+ * derives base Exception class
+ * user can create his own exception
+ * used to provide higher level of abstraction and readability
+ * 
+ * Advantages:
+ * Error free
+ * used to fix error
+ * used to handle and manage exception
+ * used to terminate automatically
+ * 
+ * EX: web form, OS {in order to come over Deadlock, crash and recovery}, Internet Communication, Database Connection
+ * 
+ * 
  * */
 public class Exceptiondemo {
 
@@ -35,6 +58,7 @@ public class Exceptiondemo {
 			System.out.println("Inside the try block method");
 			z=a/b;
 			System.out.println("Division result: "+z);
+			
 		}
 		catch(ArithmeticException e)
 		{
