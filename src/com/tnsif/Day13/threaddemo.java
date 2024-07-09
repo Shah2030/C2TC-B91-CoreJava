@@ -31,24 +31,6 @@ package com.tnsif.Day13;
  * Runnable interface has only run() as abstract method
  * Runnable is the best way to create thread
  * 
- * Thread Life Cycle:
- * New (new born state): when created, start() is not called {call to start()}
- * Runnable state: ready for execution, start() is called { when yield() is called}
- * Running state: CPU allocates time slot to thread for its execution {when run() is called} 
- * Blocked: Idle thread(not running{when suspended(), sleep(), wait() are called})
- * Dead : {when stop() is called}, end of execution, thread is killed
- * 
- * methods used in threading are:
- * start()
- * stop()
- * run()
- * yield()
- * suspended()
- * wait()
- * sleep()
- * notify()
- * notifyAll()
- * 
  * */
 public class threaddemo extends Thread {
 
