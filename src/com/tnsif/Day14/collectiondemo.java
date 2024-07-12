@@ -37,6 +37,15 @@ package com.tnsif.Day14;
 	void clear(): Removes all the elements from the list.
 	E get(int index): Returns the element at the specified position in the list.
  * 
+ * 
+ * Uses:
+ * reduce the development time
+ * easier to maintain code
+ * size of container is grow able
+ * high performance in DS algorithm
+ * 
+ * Ex:
+ * Q in ticket booking system
  * */
 public class collectiondemo {
 
