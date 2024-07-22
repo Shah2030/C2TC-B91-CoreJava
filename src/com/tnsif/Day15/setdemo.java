@@ -43,6 +43,8 @@ import java.util.HashSet;
  * not thread safe
  * slower than HashSet
  * allow duplicate elements insertion
+ * Cannot be directly sorted
+// * in order to sort convert to arrayList
  * 
  * TreeSet:
  * Sorts element in ascending order
@@ -96,6 +98,7 @@ public class setdemo
 		
 		nhs3.retainAll(nhs2);
 		System.out.println("Result :"+nhs3);
+
 	}
 
 }
