@@ -2,7 +2,7 @@ package com.tnsif.Generic;
 /*
  * It is a mechanism where a single peace of code can manipulate many differentdata type without having seperate entity
  * allows us to create a single class, interface, and methods that uses different data type
- * type compatablity at the compile time
+ * type compatibility at the compile time
  * allows parameterized instances and passing by reference
  * function same no matter what data type is used
  * Collection such as ArrayLists uses generic extensively
@@ -12,7 +12,7 @@ package com.tnsif.Generic;
  * 
  * class cn<t1,t2,..> 
  * {
- * 	//Generic type or paramiterized type
+ * 	//Generic type or parameterized type
  * }
  * 
  * Generic class: class defined using the above
